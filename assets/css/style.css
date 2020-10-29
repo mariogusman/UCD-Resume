@@ -30,6 +30,62 @@
     background-color: #525252;
 }
 
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------Special paddings/margins/text */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
 
 /*--------------------------------------------Heading*/
 
@@ -57,7 +113,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: whitesmoke;
+    color: #fff;
 }
 
 .title {
@@ -66,7 +122,7 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: whitesmoke;
+    color: #fff;
 }
 
 .list-inline-item:not(:last-child) {
@@ -77,33 +133,32 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
     height: 120px;
     text-align: center;
     padding: 0;
-
 }
 
 .menuitem a {
     width: 100%;
     text-decoration: none;
-    color: white;
+    color: #fff;
     height: 120px;
 }
 
 .menuitem a i {
     padding-top: 22px;
     display: block;
-    color: whitesmoke;
+    color: #fafafa;
     font-size: 26px;
 }
 
@@ -118,64 +173,31 @@ header {
     letter-spacing: 2px;
 }
 
-/*------------------------------ HOVER CSS */
-.hvr-sweep-to-bottom::before {
-    background-color: rgba(0, 0, 0, 0.1);
+/*--------------------------------------------Hover.css*/
+
+.hvr-sweep-to-bottom:before {
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/*------------------------------ SPECIAL PADDINGS/MARGINS/TEXT -*/
-h1, h2, h3, h4 {
-    margin: 0%;
-}
+/* ----------------------------------------Footer */
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-.general-sub {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    color: whitesmoke;
-}
-
-.inline-block {
-    display: inline-block;
-}
-
-.row-table {
-    display: table;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    float: none;
-}
-
-.section-heading {
-    font-family: "Exo", sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 40px;
-}
-
-/*------------------------------- FOOTER -*/
 footer {
     background-color: #525252;
-    color: whitesmoke;
+    color: #fafafa;
     min-height: 120px;
+    margin: 0;
 }
 
 .cv-pdf i {
     font-size: 18px;
-    color: whitesmoke;
+    color: #fafafa;
     text-align: center;
     padding-left: 5px;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 .cv-pdf i:hover {
@@ -189,29 +211,29 @@ footer {
 .social-links li a i {
     width: 32px;
     height: 32px;
-    padding: 12px;
+    padding: 12px 0;
     border-radius: 50%;
     font-size: 13px;
     line-height: 7px;
     text-align: center;
-    color: whitesmoke;
-    background-color: #8f8f8f;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
-
 .social-links li a i:hover {
-    background-color: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
     padding: 20px;
 }
 
-/*------------------------------ three reasons -*/
+/* ----------------------------------------Three Reasons */
+
 .three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
@@ -219,4 +241,39 @@ footer {
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+/* ----------------------------------------Personal Info */
+
+.personal-info-item {
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value {
+    padding-right: 8px;
+    display: inline-block;
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p {
+    margin: 0;
+}
+
+.personal-info-item .key {
+    width: 30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p {
+    font-weight: 700;
+}
+
+.personal-info-item .value {
+    position: relative;
+    width: 60%;
 }
