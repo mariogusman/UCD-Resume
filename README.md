@@ -1,4 +1,5 @@
 # UCD-Resume
+Link to the Live Website[https://mariogusman.github.io/UCD-Resume/]
 
 This is the conclusion mini-project for the User Centric Development module in Code Institute. 
   - In this module we learned to use Bootstrap to create responsive pages in a timely manner. 
@@ -10,6 +11,3 @@ This is the conclusion mini-project for the User Centric Development module in C
   - Bootstrap
   - CSS
   - Hover.css animations
-  
-### Live website
-https://mariogusman.github.io/UCD-Resume/
